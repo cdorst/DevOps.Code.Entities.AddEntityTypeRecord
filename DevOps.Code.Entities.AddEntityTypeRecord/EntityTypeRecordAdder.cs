@@ -17,7 +17,7 @@ namespace DevOps.Code.Entities.AddEntityTypeRecord
             var entry = EntityTypeTableEntry(accountName, repositoryName, entityTypeId);
             var operation = TableOperation.InsertOrReplace(entry);
             var table = await GetTable();
-            await table.ExecuteAsync(operation);;
+            await table.ExecuteAsync(operation);
         }
     }
 }
